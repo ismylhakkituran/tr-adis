@@ -17,17 +17,36 @@
 
 
 	<audio src="Audio/piano.wav" id="audio"></audio>
+	<audio src="Audio/Al.mp4" id="audio_Al"></audio>
+	<audio src="Audio/Bak.mp4" id="audio_Bak"></audio>
+	<audio src="Audio/Ben.mp4" id="audio_Ben"></audio>
+	<audio src="Audio/Bu.mp4" id="audio_Bu"></audio>
+	<audio src="Audio/O.mp4" id="audio_O"></audio>
+	<audio src="Audio/Evet.mp4" id="audio_Evet"></audio>
+	<audio src="Audio/Hayır.mp4" id="audio_Hayır"></audio>
+	<audio src="Audio/İyi.mp4" id="audio_İyi"></audio>
+	<audio src="Audio/Sen.mp4" id="audio_Sen"></audio>
+	<audio src="Audio/Ver.mp4" id="audio_Ver"></audio>
+	<audio src="Audio/Yap.mp4" id="audio_Yap"></audio>
+	<audio src="Audio/O.mp4" id="audio_O"></audio>
+	<audio src="Audio/Yardım.mp4" id="audio_Yardım"></audio>
+	<audio src="Audio/Yemek.mp4" id="audio_Yemek"></audio>
 	<div class="container">
 	
 
-	<button class="button" onclick="myFunction()"><img src="Pictures/iyi.jpeg" width="200" height="200"></button>
-	<button class="button" onclick="myFunction()"><img src="Pictures/iyi.jpeg" width="200" height="200"></button>
-	<button class="button" onclick="myFunction()"><img src="Pictures/iyi.jpeg" width="200" height="200"></button>
-	<button class="button" onclick="myFunction()"><img src="Pictures/iyi.jpeg" width="200" height="200"></button>
-	<button class="button" onclick="myFunction()"><img src="Pictures/iyi.jpeg" width="200" height="200"></button>
-	<button class="button" onclick="myFunction()"><img src="Pictures/iyi.jpeg" width="200" height="200"></button>
-	<button class="button" onclick="myFunction()"><img src="Pictures/iyi.jpeg" width="200" height="200"></button>
-	<button class="button" onclick="myFunction()"><img src="Pictures/iyi.jpeg" width="200" height="200"></button>
+	<button class="button" onclick="myFunction('Al')">Al<img src="Pictures/iyi.jpeg" width="200" height="200"></button>
+	<button class="button" onclick="myFunction('Bak')">Bak<img src="Pictures/iyi.jpeg" width="200" height="200"></button>
+	<button class="button" onclick="myFunction('Ben')">Ben<img src="Pictures/iyi.jpeg" width="200" height="200"></button>
+	<button class="button" onclick="myFunction('Bu')">Bu<img src="Pictures/iyi.jpeg" width="200" height="200"></button>
+	<button class="button" onclick="myFunction('O')">O<img src="Pictures/iyi.jpeg" width="200" height="200"></button>
+	<button class="button" onclick="myFunction('Evet')">Evet<img src="Pictures/iyi.jpeg" width="200" height="200"></button>
+	<button class="button" onclick="myFunction('Hayır')">Hayır<img src="Pictures/iyi.jpeg" width="200" height="200"></button>
+	<button class="button" onclick="myFunction('İyi')">İyi<img src="Pictures/iyi.jpeg" width="200" height="200"></button>
+	<button class="button" onclick="myFunction('Sen')">Sen<img src="Pictures/iyi.jpeg" width="200" height="200"></button>
+	<button class="button" onclick="myFunction('Ver')">Ver<img src="Pictures/iyi.jpeg" width="200" height="200"></button>
+	<button class="button" onclick="myFunction('Yap')">Yap<img src="Pictures/iyi.jpeg" width="200" height="200"></button>
+	<button class="button" onclick="myFunction('Yardım')">Yardım<img src="Pictures/iyi.jpeg" width="200" height="200"></button>
+	<button class="button" onclick="myFunction('Yemek')">Yemek<img src="Pictures/iyi.jpeg" width="200" height="200"></button>
 
 
 	
@@ -54,7 +73,7 @@
 	<div class="button">Youtube</div>
 	<div class="button">Masal</div>
 	<div class="button">Araba</div>
-	<button onclick="myFunction()"><img src="Pictures/iyi.jpeg"></button>
+	<button onclick="myFunction('')"><img src="Pictures/iyi.jpeg"></button>
 	<div class="button">Ağlama</div>
 	<div class="button">Temizle</div-->
 </div>
@@ -64,8 +83,11 @@
 
 
 <script >
-  function myFunction() {
-  var sound = document.getElementById("audio");
+  var text;
+  function myFunction(text) {
+  text="audio_"+text;
+  var sound = document.getElementById(text);
+	console.log(	"merhaba 2 -> "+ text	);
   sound.play();
 }
 </script>

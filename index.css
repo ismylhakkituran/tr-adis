@@ -11,9 +11,9 @@ h1 {
 	display: grid;
 	width: 600px;
 	/* width:1fr;*/
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 	grid-gap: 2em;
-	padding-top: 20px;
+	padding-top: 15px;	
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-button: 30px;
@@ -22,19 +22,20 @@ h1 {
 
 .button{
 	height: 300px;
-	padding: 40px;	
+	padding: 25px 45px 35px 45px;	
 	/*background:url("https://images.unsplash.com/photo-1620648378507-4ad3fac3bb51?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=389&q=80");*/
 	text-align: center;
 	cursor: pointer;
+	margin: 0px;
 	background-color: dodgerblue;
-	color: Black;
+	color: black;
 	font-size: 1.5em;
 	border-radius: 19px;
 	box-shadow: 1px 1px 1px #333;
 	transition: .2s;
 	&:hover {
 		box-shadow: 10px 10px 10px fuchsia;
-		transform: scale(1.15);
+		transform: scale(1.25);
 		background-color: gray;
 		color: black;
 	}
